@@ -1,0 +1,13 @@
+Ce vreau sa se intample?
+
+1. Sa primesc input legat de: - totalul facturii
+                              - numarul de oameni
+                              - ce buton a fost selectat (procentul de tip)
+2. Sa ma asigur ca numarul de persoane este valid (>100)
+3. Daca nu este valid, vreau sa apara avertizarea
+4. Daca un buton este selectat, vreau sa i se schimbe culoarea
+5. Vreau ca butonul de reset sa devina activ numai cand cel putin un camp este completat
+6. Vreau ca in tip amount sa retin cand trebuie sa cheltuiasca fiecare pe tip
+7. Vreau sa retin totalul  pe care fiecare persoana trebuie sa il cheltuiasca, cu tipul 
+inclus
+

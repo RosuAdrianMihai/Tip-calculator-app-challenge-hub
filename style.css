@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+body {
+  font-family: "Space Mono", monospace;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  background-color: hsl(185, 41%, 84%);
+  font-size: 18px;
+}
+
+.app-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+label {
+  display: block;
+}
+
+input {
+  position: relative;
+  width: 97.5%;
+  height: 30px;
+  direction: rtl;
+  background-color: hsl(185, 41%, 84%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-image {
+  position: absolute;
+  z-index: 2;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.right-part {
+  background-color: hsl(183, 100%, 15%);
+  width: 90%;
+  padding: 5%;
+  border-radius: 15px;
+}
+
+.left-part {
+  width: 100%;
+}
+
+#tip-selection {
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3%;
+  row-gap: 15%;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.left-part button {
+  border: none;
+  background-color: hsl(183, 100%, 15%);
+  padding: 10% 0;
+  font-size: 18px;
+  font-weight: 750;
+  color: white;
+}
+
+.description {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description label,
+.description span {
+    font-size:14px;
+    font-weight:550;
+}
+
+.description label, .left-part>label{
+    color:hsl(184, 14%, 56%);
+}
+
+.container {
+  background-color: white;
+}
+
+button {
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: hsl(172, 67%, 45%);
+}
+
+#custom {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(184, 14%, 56%);
+  font-weight: 750;
+  height:100%;
+  
+}
+
+.display-inline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.result {
+  font-size: 4vw;
+  color: hsl(172, 67%, 45%);
+}
+
+.dollar-display {
+  height: 2.5vw;
+  color: hsl(172, 67%, 45%);
+}
+
+.align {
+  display: flex;
+  align-items: center;
+}
+
+.main-text {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.side-text {
+  color: hsl(185, 41%, 84%);
+  font-size: 13px;
+}
+
+#end {
+  background-color: hsl(183, 64%, 26%);
+  border: none;
+  border-radius: 8px;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.real-reset-color {
+  background-color: hsl(172, 67%, 45%);
+}
+
+.real-reset-color:hover {
+  background-color: hsl(189, 41%, 97%);
+}
+
+.description span {
+  color: red;
+  visibility: hidden;
+}
+
+.content{
+    font-size:20px;
+    font-weight:600;
+    height:45px;
+}
+
+.left-part>.content:focus{
+  border:solid 3px;
+  border-color: hsl(172, 67%, 45%);
+}
+
+.left-part>input:active{
+    border-color: hsl(172, 67%, 45%);
+}
+
+input{
+  border:none;
+}
+
+.color-button{
+  background-color: hsl(172, 67%, 45%);
+}
+
+
+
+@media (max-width: 375px) {
+    .result{
+        font-size:45px;
+    }
+
+    .dollar-display{
+        height: 35px;
+    }
+
+    .right-part{
+        margin-top:40px;
+    }
+    .container{
+        width:80vw;
+        background-color: none;
+        border-radius:15px;
+        padding:2%;
+    }
+}
+
+
+
+@media(min-width:376px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        column-gap: 7%;
+        padding: 3%;
+        border-radius: 15px;
+        width: 80vw;
+      }#end {
+        margin-top: 8vh;
+        padding: 10px 0;
+        align-content: center;
+      }
+      .right-part{
+        height:320px;
+      }
+}
+
+@media (min-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    column-gap: 7%;
+    padding: 3%;
+    border-radius: 15px;
+    width: 55vw;
+  }
+
+  #custom{
+    font-size:1.4vw;
+  }
+
+  #end {
+    margin-top: 8vh;
+    padding: 10px 0;
+    align-content: center;
+  }
+  .right-part{
+    height:320px;
+  }
+}

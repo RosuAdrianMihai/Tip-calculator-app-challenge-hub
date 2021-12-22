@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="png" sizes="32x32" href="favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="app.js" defer></script>
+
+</head>
+
+<body>
+
+<div class="page">
+
+<div class = "app-title">
+
+<img src="logo.svg" alt="">
+
+</div>
+
+ <div class = "container">
+
+<div class = "left-part">
+
+ <label>Bill</label>
+
+ <img class="input-image" src="icon-dollar.svg" alt="">
+
+ <input class="content" type="number" placeholder="0">
+
+ 
+
+ <label id = "tip-selection">Select Tip %</label>
+
+ <div class = "button-container">
+
+ <button class = "button">5%</button>
+ <button class = "button">10%</button>
+ <button class = "button">15%</button>
+ <button class = "button">25%</button>
+ <button class = "button">50%</button>
+ <input type = "number" class = "button" id = "custom" placeholder = "Custom">
+
+ </div>
+
+ <div>
+
+  <div class = "description">
+
+  <label>Number of People</label>
+
+    <span id = "avertisment">Most be greater than 0</span>
+
+  </div>
+
+  <img class="input-image" src="icon-person.svg" alt="">
+
+    <input class="content" type="number" placeholder="0">
+
+   
+
+ </div>
+
+</div>
+
+<div  class = "right-part">
+
+  <div class = "display-inline">
+
+<div>
+
+  <div class = "main-text">Tip Amount</div>
+  <div class = "side-text">/ person</div>
+
+</div>
+
+<div class = "align"><img class ="dollar-display" src="icon-dollar.svg" alt=""> <span class = "result">0.00</span> </div>
+
+</div>
+
+<div  class = "display-inline">
+
+  <div>
+  
+    <div class = "main-text">Total</div>
+    <div class = "side-text">/ person</div>
+  
+  </div>
+  
+  <div class = "align"><img class ="dollar-display" src="icon-dollar.svg" alt=""> <span class = "result">0.00</span> </div>
+  
+  </div>
+
+  <button id ="end">Reset</button>
+
+</div>
+
+ </div>
+
+</div>
+
+</body>
+
+</html>
+
+<!--
+Bill
+
+Select Tip %
+5%
+10%
+15%
+25%
+50%
+Custom
+
+Number of People
+
+Tip Amount
+/ person
+
+Total
+/ person
+
+Reset
+-->
